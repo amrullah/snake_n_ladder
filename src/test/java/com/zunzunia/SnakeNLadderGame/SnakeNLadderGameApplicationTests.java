@@ -45,7 +45,7 @@ class SnakeNLadderGameApplicationTests {
 		Exception exception1 = assertThrows(IllegalArgumentException.class,
 				() -> gameInitializer.constructGame(1, 3, snakes, ladders));
 		assertEquals("Two snakes have conflicting tops: 40", exception1.getMessage());
-
+		
 	}
 	@Test
 	void testGameCreationWith_ConflictingLadders_Bottoms() {
